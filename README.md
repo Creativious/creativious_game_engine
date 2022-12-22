@@ -21,6 +21,6 @@ The learning process will be documented below to help anyone trying out the same
 
 # Learning Process
 
-* 1. Learn rust first (Good video to learn is [here](https://www.youtube.com/watch?v=ygL_xcavzQ4&t=2s&ab_channel=DerekBanas))
+1. Learn rust first (Good video to learn is [here](https://www.youtube.com/watch?v=ygL_xcavzQ4&t=2s&ab_channel=DerekBanas))
 
-* 2. *TO BE ADDED*
+2. *TO BE ADDED*
