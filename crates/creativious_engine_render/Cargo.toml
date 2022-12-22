@@ -1,5 +1,5 @@
 [package]
-name = "creativious_engine_core"
+name = "creativious_engine_render"
 version = "0.1.0"
 edition = "2021"
 
