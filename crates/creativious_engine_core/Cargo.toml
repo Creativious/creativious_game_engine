@@ -8,3 +8,4 @@ edition = "2021"
 [dependencies]
 rand = "0.8.5"
 creativious_engine_render = { path = "../creativious_engine_render", version = "0.1.0" }
+creativious_vulkan_api = { path = "../creativious_vulkan_api", version = "0.1.0"}

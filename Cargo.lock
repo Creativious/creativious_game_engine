@@ -3,6 +3,12 @@
 version = 3
 
 [[package]]
+name = "bitflags"
+version = "1.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bef38d45163c2f1dde094a7dfd33ccf595c92905c8f8f4fdc18d06fb1037718a"
+
+[[package]]
 name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -13,6 +19,7 @@ name = "creativious_engine_core"
 version = "0.1.0"
 dependencies = [
  "creativious_engine_render",
+ "creativious_vulkan_api",
  "rand",
 ]
 
@@ -20,6 +27,7 @@ dependencies = [
 name = "creativious_engine_render"
 version = "0.1.0"
 dependencies = [
+ "creativious_vulkan_api",
  "rand",
 ]
 
@@ -29,6 +37,14 @@ version = "0.1.0"
 dependencies = [
  "creativious_engine_core",
  "rand",
+]
+
+[[package]]
+name = "creativious_vulkan_api"
+version = "0.1.0"
+dependencies = [
+ "rand",
+ "vulkanalia",
 ]
 
 [[package]]
@@ -82,6 +98,24 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ec0be4795e2f6a28069bec0b5ff3e2ac9bafc99e6a9a7dc3547996c5c816922c"
 dependencies = [
  "getrandom",
+]
+
+[[package]]
+name = "vulkanalia"
+version = "0.17.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "fa717411225cfc5c096b134fadb6c972a64f06d6654c381e4b3acd70903cfafd"
+dependencies = [
+ "vulkanalia-sys",
+]
+
+[[package]]
+name = "vulkanalia-sys"
+version = "0.17.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a0584114db68476495ee600aebbfeb0961c91048d284b9e19388acb7634f0287"
+dependencies = [
+ "bitflags",
 ]
 
 [[package]]
